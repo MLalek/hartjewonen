@@ -42,11 +42,9 @@ public class Driver {
         return driver;
     }
     public static void closeDriver(){
-        //Close driver if it is not null
-        //It means driver is pointing chrome(is being used)
+
         if (driver!=null) {
             driver.quit();
-            //driver is pointing the chrome driver is not null
             driver=null;
         }
 

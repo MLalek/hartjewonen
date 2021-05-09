@@ -6,8 +6,6 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import pages.HartjewonenPage;
-import utilities.ConfigReader;
-import utilities.Driver;
 import utilities.ReusableMethods;
 
 import java.util.List;
