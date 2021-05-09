@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="32.568">
+<testcase classname="US0001 woningen selectiefilters" name="TC01 verifiëren the lijst met woningen die op de pagina getoond worden" time="13.403">
+<failure message="an option is not selected as Alles" type="java.lang.AssertionError"><![CDATA[Given user is on the hartjewonen page.......................................passed
+Then verify that all filter options selected as "Alles".....................failed
+Then there should be 7 houses listed........................................skipped
+
+StackTrace:
+java.lang.AssertionError: an option is not selected as Alles
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at stepdefinitions.Filters.verifyThatAllFilterOptionsSelectedAs(Filters.java:27)
+	at ✽.verify that all filter options selected as "Alles"(file:///C:/Users/Mehmet/IdeaProjects/hartjewonen/src/test/resources/features/US0001_woningen_selectiefilters.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="US0001 woningen selectiefilters" name="TC02 verifiëren dat de getoonde woningen inderdaad 4 ruimtes hebben" time="8.782">
+<system-out><![CDATA[Given user is on the hartjewonen page.......................................passed
+When user wants to see Aantal ruimtes as "4"................................passed
+Then verify the houses which has "4" rooms are listed.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="US0001 woningen selectiefilters" name="TC03 verifiëren dat de getoonde woningen zijn verkocht" time="9.451">
+<system-out><![CDATA[Given user is on the hartjewonen page.......................................passed
+When user wants to see sold houses "VERKOCHT"...............................passed
+Then verify sold houses are listed "VERKOCHT"...............................passed
+]]></system-out>
+</testcase>
+</testsuite>
